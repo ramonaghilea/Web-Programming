@@ -1,0 +1,334 @@
+.navBarTwitter {
+    width: 100%;
+    height: 50px;
+    margin: 0px auto 0px auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.leftArrowColumn {
+    width: 11%;
+    float: left;
+    height: 100%;
+    background-color: white;
+}
+
+.leftArrow {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.TwitterColumn {
+    width: 20%;
+    float: left;
+    height: 100%;
+    background-color:white;
+}
+
+.iconChecked {
+    float: right;
+    width: 25px;
+    height: 25px;
+    background-image: url('/twitter-logo.png');
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.twitterTitle {
+    font-size: 1.1em;
+    font-weight: 800;
+    float: right;
+    width: 60%;
+    height: 30px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.nrTweets {
+    margin-left: 22px;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.atTwitter {
+    margin-left: 22px;
+    font-size: 1em;
+    color: grey;
+}
+
+
+
+
+.profilePictures {
+    height: 280px;
+    background-color: white;
+    width: auto;
+    position: relative;
+}
+
+.coverPicture {
+    position: absolute;
+    width: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 73.7%;
+}
+
+.iconAndFollowingButton {
+    height: 70%;
+    margin-top: 30%;
+    width: auto;
+}
+
+.iconPictureWrapper {
+    height: 40%;
+    display: block;
+    width: auto;
+}
+
+.iconPicture {
+    height: 140px;
+    width: 140px;
+    float: left;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border: 5px solid white;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.profilePicturesButtons {
+    margin-top: 210px;
+    float: right;
+    width: 220px;
+    height: 25%;
+    background-color: white;
+}
+
+.nearFollowingButtons {
+    width: 110px;
+    height: 55px;
+}
+
+.followingButton {
+    margin: 5px;
+    background: #333;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    line-height: 38px;
+    border-radius: 20px;
+}
+
+.followingButton2 {
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background: rgb(40, 148, 248);
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.followingButton2Text {
+    margin-top: 10px;
+}
+
+.twitterDetails {
+    width: auto;
+    height: 190px;
+    background-color: white;
+}
+
+.TwitterRowWrapper {
+    width: auto;
+    height: 60px;
+    background-color: white;
+}
+
+.TwitterRow {
+    width: 20%;
+    float: left;
+    height: 60px;
+    background-color:white;
+}
+
+.twitterDescription {
+    width: auto;
+    height: 20px;
+    margin-left: 22px;
+    font-size: 0.9em;
+    color: rgb(43, 49, 54);
+    background-color: white;
+}
+
+.detalisLine1 {
+    width: auto;
+    height: 18px;
+    margin-left: 22px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.detalisLine1-column1 {
+    float: left;
+    height: 18px;
+    width: 18%;
+    background-color: white;
+}
+
+.iconEverywhere {
+    float: left;
+    width: 18px;
+    height: 22px;
+}
+
+.textEverywhere {
+    margin-left: 7px;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: grey;
+    float: left;
+    height: 18px;
+}
+
+
+
+.detalisLine1-column2 {
+    float: left;
+    height: 18px;
+    width: 24%;
+    background-color: white;
+}
+
+.textLink {
+    margin-left: 7px;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: rgb(40, 148, 248);
+    float: left;
+    width: 60%;
+    height: 18px;
+}
+
+.detalisLine1-column3 {
+    float: left;
+    height: 18px;
+    width: 20%;
+    background-color: white;
+}
+
+.detalisLine1-column4 {
+    float: left;
+    height: 18px;
+    width: 40%;
+    background-color: white;
+}
+
+.nrFollowersLine {
+    width: auto;
+    height: 18px;
+    margin-left: 22px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.nrFollowersLine-column1 {
+    float: left;
+    height: 18px;
+    width: 18%;
+    background-color: white;
+}
+
+.numberText {
+    margin-left: 7px;
+    margin-top: 4px;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: black;
+    float: left;
+    height: 18px;
+}
+
+.nrFollowersLine-column2 {
+    float: left;
+    height: 18px;
+    width: 20%;
+    background-color: white;
+}
+
+.followedByLine {
+    width: auto;
+    height: 32px;
+    margin-left: 22px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.iconFollowedBy {
+    float: left;
+    width: 40px;
+    height: 31px;
+}
+
+.textFollowedBy {
+    margin-left: 8px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: grey;
+    float: left;
+    height: 18px;
+}
+
+
+
+.tweetsToolbar {
+    width: auto;
+    height: 45px;
+    background-color: white;
+}
+
+.tweetsToolbar-column1 {
+    float: left;
+    width: 25%;
+    height: 45px;
+    margin-left: 0px;
+    color: rgb(40, 148, 248);
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid rgb(40, 148, 248);
+}
+
+.tweetsToolbar-column2 {
+    float: left;
+    width: 25%;
+    height: 45px;
+    margin-left: 0px;
+    color: grey;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+}
+
+.twitterToolbar-text {
+    margin-top: 13px;
+}

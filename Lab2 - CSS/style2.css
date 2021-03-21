@@ -1,0 +1,110 @@
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	-webkit-transition: left 2s;
+	transition:	left 2s, top 2s, background-color 2s;
+}
+
+.box:hover {
+	left: 100%;
+	top: 100%;
+
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.div_transition {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    from {
+        left:0;
+        top:0;
+    }
+    to {
+        left: 20px;
+        top: 20px;
+        background-color: red;
+    }
+}
+
+.div_transition:hover {
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.div_transition3 {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.div_transition3:hover {
+    background-color: red;
+    transform: translate(20px, 20px);
+    transition-timing-function: linear;
+}
+
+
+.div_transition2 {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 4s;
+}
+
+.div_transition2:hover {
+    background-color: red;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.myDiv{
+	background-color: blue;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	height: 30%;
+	width: 30%;
+	transition: top 2s, left 2s;
+
+}
+
+.myDiv:hover{
+	background-color: red;
+	top: 70%;
+	left: 70%;
+
+}

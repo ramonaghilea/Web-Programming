@@ -1,0 +1,18 @@
+.twitterlogo {
+    width: 47px;
+    height: 47px;
+    margin-left: 10px;
+}
+
+.verticalIconsBar {
+    height: 370px;
+    width: 65px;
+}
+
+.userIcon {
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+    margin-top: 80px;
+    border-radius: 20px;
+}
