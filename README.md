@@ -12,3 +12,9 @@ Create a single HTML web page for a subject you like (e.g. personal home page, p
 
 ### Lab 3
 Develop an html+css web document that looks like the following web page: https://twitter.com/twitter. You should clone about one screen of this web page (not the whole web page) and your html document should look approximately 90% as the given web page. No interactivity should be added (e.g. javascript, :hover effects etc.) and you are not allowed to use any css or javascript library.
+
+### Lab 5
+Write a javascript which will be used in an html document that contains a tabel with 3 columns and several lines. When the user clicks the table header the script will sort in ascending order the elements from the current column. If the user clicks again on the column header, the elements will be sorted in descending order.
+
+### Lab 6
+Write a web page which contains a table with 10 lines and 4 columns. The table should also have a column header and a column footer. When the user clicks on a cell from the header, the table content will be sorted in ascending order of the cells from the column that the user has clicked on. If the user clicks again on the header cell from that column, the table will be sorted again, but in descending order of the cells from that column. If the user clicks on a footer cell from column i, than the cells from column i will be interchanged with the cells from the column i+1 (if i+1=5, the first column is interchanged with column 4).
