@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Log</title>
+</head>
+
+<body>
+<div class="container-main container-login">
+  <div class="wrap-main wrap-login">
+
+    <form class="form-main form-login" action="../PHP/updateLog.php" method="post">
+            <span class="title-main">
+                Update Log
+            </span>
+
+      <table class='table'>
+        <tr>
+          <th>LogId</th>
+          <th>Type</th>
+          <th>Severity</th>
+          <th>Date</th>
+          <th>UserId</th>
+          <th>Message</th>
+        </tr>
+
+        <tr *ngFor="let log of logs">
+          <td *ngFor="let cell of log">{{cell}}</td>
+        </tr>
+
+      </table>
+
+      <nav class="pagination" id = "page-navigation">
+        <button class="pages" *ngIf = "showPrevious" id = "prev-button" (click) = "goToPreviousPage()">Previous</button>
+        <button class="pages" *ngIf = "showNext" id = "next-button" (click) = "goToNextPage()">Next</button>
+      </nav>
+
+      <span class="subtitle-main">
+                Log Id
+            </span>
+      <div class="wrap-input">
+        <input class="input" type="text" name="logid" placeholder="Log Id" #logId>
+      </div>
+
+      <span class="subtitle-main">
+                Type
+            </span>
+      <div class="wrap-input">
+        <input class="input" type="text" name="type" placeholder="Type" #type>
+      </div>
+
+      <span class="subtitle-main">
+                Severity
+            </span>
+      <div class="wrap-input">
+        <input class="input" type="text" name="severity" placeholder="Severity" #severity>
+      </div>
+
+      <span class="subtitle-main">
+                Date
+            </span>
+      <div class="wrap-input">
+        <input class="input" type="date" name="date" placeholder="Date" #date>
+      </div>
+
+      <span class="subtitle-main">
+                Message
+            </span>
+      <div class="wrap-input">
+        <input class="input" type="text" name="message" placeholder="Message" #message>
+      </div>
+
+
+      <div class="wrap-button">
+        <button (click)="updateLog(logId.value, type.value, severity.value, date.value, message.value)"class="button" type="submit">Update</button>
+      </div>
+    </form>
+
+    <div class="homepage-button">
+      <a routerLink="/homepage" routerLinkActive="active">
+        <button class="button">Homepage</button>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

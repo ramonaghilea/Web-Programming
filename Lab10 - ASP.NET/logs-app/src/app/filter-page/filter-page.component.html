@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filter Logs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{usernameOnSession}} </a>
+  <a routerLink="/homepage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">Homepage</button>
+  </a>
+  <a routerLink="/deletePage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">My Log Reports</button>
+  </a>
+  <a routerLink="/filterPage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">Filter Log Reports</button>
+  </a>
+  <a href="/addPage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">Add Log</button>
+  </a>
+  <form class="form-inline">
+    <button (click)="logOut()" class="btn btn-outline-secondary my-2 my-sm-0" type="submit" name="logout" value="Logout">Logout</button>
+  </form>
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container-md">
+  <div class="row justify-content-center">
+    <h1>Filter Log Reports</h1>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<div class="container-md">
+  <div class="row justify-content-center">
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <!--      <th>LogId</th>-->
+          <th scope="col">Type</th>
+          <th scope="col">Severity</th>
+          <th scope="col">Date</th>
+          <!--      <th>UserId</th>-->
+          <th scope="col">Message</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let log of logs">
+        <!--            <td>{{log.logId}}</td>-->
+        <td>{{log.type}}</td>
+        <td>{{log.severity}}</td>
+        <td>{{log.dateOfLog}}</td>
+        <td>{{log.message}}</td>
+
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="container-md">
+  <div class="row justify-content-center">
+    <nav class="pagination">
+      <button class="btn btn-info" *ngIf = "showPrevious" id = "prev-button" (click) = "goToPreviousPage()">Previous</button>
+      <button class="btn btn-info" *ngIf = "showNext" id = "next-button" (click) = "goToNextPage()">Next</button>
+    </nav>
+  </div>
+</div>
+
+<div class="container-sm">
+  <div class="row justify-content-center">
+    <form id="add-topic-form" class="form-group">
+
+      <div class="form-group">
+        <label for="type">Type</label>
+        <input type="text" name="type" class="form-control" id="type" placeholder="Enter type" #type>
+      </div>
+
+      <div class="form-group">
+        <label for="severity">Severity</label>
+        <input type="text" name="severity" class="form-control" id="severity" placeholder="Enter severity" #severity>
+      </div>
+
+      <button (click)="changeFilters(type.value, severity.value)" id="filterButton" class="btn btn-info" type="button">Filter</button>
+    </form>
+
+  </div>
+</div>
+
+<br>
+<br>
+
+
+</body>
+</html>

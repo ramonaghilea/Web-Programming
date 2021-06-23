@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Log</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{usernameOnSession}} </a>
+  <a routerLink="/homepage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">Homepage</button>
+  </a>
+  <a routerLink="/deletePage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">My Log Reports</button>
+  </a>
+  <a routerLink="/filterPage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">Filter Log Reports</button>
+  </a>
+  <a href="/addPage" routerLinkActive="active">
+    <button class="btn btn-outline-secondary my-2 my-sm-0">Add Log</button>
+  </a>
+  <form class="form-inline">
+    <button (click)="logOut()" class="btn btn-outline-secondary my-2 my-sm-0" type="submit" name="logout" value="Logout">Logout</button>
+  </form>
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container-md">
+  <div class="row justify-content-center">
+    <h1>Add Log</h1>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="container-sm">
+  <div class="row justify-content-center">
+    <form id="add-topic-form" class="form-group">
+
+      <div class="form-group">
+        <label for="type">Type</label>
+        <input type="text" name="type" class="form-control" id="type" placeholder="Enter type" #type>
+      </div>
+
+      <div class="form-group">
+        <label for="severity">Severity</label>
+        <input type="text" name="severity" class="form-control" id="severity" placeholder="Enter severity" #severity>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" name="date" class="form-control" id="date" #date>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <input type="text" name="message" class="form-control" id="message" #message>
+      </div>
+
+      <button (click)="addLog(type.value, severity.value, date.value, message.value)" class="btn btn-info" type="submit">Add</button>
+
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>
